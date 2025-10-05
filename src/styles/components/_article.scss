@@ -1,0 +1,18 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.article {
+  &__paragraph {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: Bold;
+    line-height: 140%;
+    color: #292929;
+    letter-spacing: 0;
+
+    @media (min-width: 600px) {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+
+    width: 280px;
+    height: 56px;
+    padding: 0 48px;
+    border: 3px solid #292929;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #292929;
+
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: #292929;
+      background-color: transparent;
+    }
+  }
+}

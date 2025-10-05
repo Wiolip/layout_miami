@@ -1,7 +1,21 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
+@use './base/reset';
+@use './base/base';
 
-body {
-  background: $c-gray;
-}
+@use './utils/variables';
+@use './utils/mixins';
+
+@use './components/navigation';
+@use './components/menu';
+@use './components/title';
+@use './components/pictures';
+@use './components/button';
+@use './components/section';
+@use './components/features';
+@use './components/form';
+@use './components/address';
+@use './components/contact';
+
+@use './layout/header';
+@use './layout/main-section';
+@use './components/article';
+@use './layout/footer';

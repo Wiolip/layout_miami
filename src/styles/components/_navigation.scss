@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 125px;
+  }
+
+  &__icons {
+    width: 24px;
+  }
+}

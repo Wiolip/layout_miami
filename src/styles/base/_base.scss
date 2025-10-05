@@ -1,0 +1,14 @@
+@use '../utils/mixins' as *;
+
+html {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@include headers-font;
