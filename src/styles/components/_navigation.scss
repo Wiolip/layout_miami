@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .navigation {
   display: flex;
   align-items: center;
@@ -13,9 +15,17 @@
 
   &__logo {
     width: 125px;
+
+    @include for-tablet  {
+      width: 188px;
+    }
   }
 
   &__icons {
     width: 24px;
+
+    @include for-tablet {
+      width: 32px;
+    }
   }
 }

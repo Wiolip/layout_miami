@@ -1,0 +1,28 @@
+@use '../utils/mixins' as *;
+
+.phone{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  text-decoration: none;
+
+  &__label{
+    position: absolute;
+    transform: translateX(calc(-100% - 20px));
+
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #292929;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: middle;
+
+  }
+  &:not(:hover) &__label{
+    @include visually-hidden;
+  }
+
+}

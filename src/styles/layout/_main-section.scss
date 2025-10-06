@@ -74,4 +74,12 @@
       grid-column: 6 / 13;
     }
   }
+
+ @include for-tablet {
+    padding: 120px 72px;
+  }
+
+   @include for-desktop {
+    padding: 120px;
+  }
 }

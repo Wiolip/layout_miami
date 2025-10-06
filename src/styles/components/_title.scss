@@ -9,6 +9,7 @@
   color: $header-color;
   letter-spacing: -1.5px;
 
+
   &--decorated::before {
     content: url('../images/Sound\ waves.svg');
 
@@ -17,27 +18,33 @@
     width: 48px;
     height: 58px;
     margin-bottom: 16px;
+
+   @include for-tablet  {
+      width: 6%;
+    }
   }
 
+
   &--secondary {
-    margin-bottom: 38px;
+    margin-bottom: 48px;
 
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    line-height: 32px;
+    line-height: 48px;
     text-align: center;
 
-    @media (min-width: 600px) {
+    @include for-tablet {
+      margin-bottom: 64px;
       font-size: 48px;
     }
   }
 
-  @media (min-width: 600px) {
+  @include for-tablet  {
     font-size: 40px;
   }
 
-  @media (min-width: 1020px) {
+  @include for-desktop  {
     font-size: 48px;
   }
 }
