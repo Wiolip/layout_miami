@@ -3,12 +3,18 @@
 html {
   box-sizing: border-box;
   font-family: Inter, sans-serif;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body:has(.menu:target) {
+  overflow: hidden;
+  height: 100vh;
 }
 
 @include headers-font;
