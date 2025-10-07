@@ -98,14 +98,13 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 27px;
+    text-decoration: none;
 
 
   }
 
   &__call-link {
     padding-bottom: 8px;
-    border-bottom: 1px solid #292929;
-
     font-family: Inter, sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -115,6 +114,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 
-
+    &:hover{
+      border-bottom: 1px solid #292929;
+    }
   }
 }
