@@ -1,9 +1,9 @@
 @use '../utils/mixins' as *;
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: Inter, sans-serif;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -17,7 +17,6 @@ body:has(.menu:target) {
   height: 100vh;
 }
 
-a{
+a {
   text-decoration: none;
 }
-

@@ -13,12 +13,15 @@
   }
 
   &__content {
+    cursor: pointer;
+
     display: inline-block;
+
     margin-bottom: 24px;
+
     font-size: 14px;
     color: $address-content;
     text-decoration: none;
-    cursor: pointer;
 
     @include hover(color, $address-link-hover);
   }

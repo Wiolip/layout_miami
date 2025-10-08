@@ -2,13 +2,13 @@
 @use '../utils/extends' as *;
 @use '../utils/variables' as *;
 
-.phone{
+.phone {
   display: flex;
   gap: 20px;
   align-items: center;
   text-decoration: none;
 
-  &__label{
+  &__label {
     position: absolute;
     transform: translateX(calc(-100% - 20px));
 
@@ -21,10 +21,8 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     vertical-align: middle;
-
   }
-  &:not(:hover) &__label{
+  &:not(:hover) &__label {
     @include visually-hidden;
   }
-
 }

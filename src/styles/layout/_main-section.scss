@@ -75,11 +75,11 @@
     }
   }
 
- @include for-tablet {
+  @include for-tablet {
     padding: 120px 72px;
   }
 
-   @include for-desktop {
+  @include for-desktop {
     padding: 120px;
   }
 }

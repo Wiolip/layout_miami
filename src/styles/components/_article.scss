@@ -2,10 +2,10 @@
 @use '../utils/mixins' as *;
 @use '../utils/extends' as *;
 
-
 .article {
   &__paragraph {
     @extend %p;
+
     font-weight: 700;
     line-height: 140%;
     color: $text-color;

@@ -8,14 +8,17 @@
 
 @mixin visually-hidden() {
   position: absolute;
+
   overflow: hidden;
+
   width: 1px;
   height: 1px;
+
   white-space: nowrap;
+
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
 }
-
 
 @mixin for-desktop() {
   @media (min-width: 1020px) {
@@ -28,7 +31,6 @@
     @content;
   }
 }
-
 
 @mixin grid() {
   display: grid;
@@ -47,11 +49,9 @@
   }
 }
 
-
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
   }
 }
-

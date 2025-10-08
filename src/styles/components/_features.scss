@@ -30,13 +30,15 @@
   }
 
   &__img {
-    width: 280px;
     display: block;
+
+    width: 280px;
     margin: 0 auto;
     margin-bottom: 32px;
+
     transition: transform 0.3s ease;
 
-    &:hover{
+    &:hover {
       transform: scale(1.1);
     }
 
@@ -47,7 +49,5 @@
     @include for-desktop {
       width: 324px;
     }
-
   }
-
 }

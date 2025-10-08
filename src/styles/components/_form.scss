@@ -22,23 +22,23 @@
 
     &::placeholder {
       @extend %form;
+
       line-height: 20px;
     }
 
-    &:hover{
+    &:hover {
       border: 1px solid $form-border-color;
 
-      &::placeholder{
+      &::placeholder {
         color: $base-color;
       }
     }
 
-    &:focus, &:active{
-        border: 1px solid $base-color;
-        color: $base-color;
+    &:focus,
+    &:active {
+      border: 1px solid $base-color;
+      color: $base-color;
     }
-
-
   }
 
   &__label {
@@ -57,21 +57,21 @@
     background-color: $input-bg;
 
     &::placeholder {
-       @extend %form;
-
+      @extend %form;
     }
 
-    &:hover{
+    &:hover {
       border: 1px solid $form-border-color;
 
-      &::placeholder{
+      &::placeholder {
         color: $base-color;
       }
     }
 
-    &:focus, &:active{
-        border: 1px solid $base-color;
-        color: $base-color;
+    &:focus,
+    &:active {
+      border: 1px solid $base-color;
+      color: $base-color;
     }
   }
 }

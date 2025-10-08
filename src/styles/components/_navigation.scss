@@ -1,20 +1,22 @@
 @use '../utils/mixins' as *;
 @use '../utils/extends' as *;
 @use '../utils/variables' as *;
+
 .navigation {
   @extend %navigation-flex;
+
   padding: 24px 0;
 
   &__wrapper {
     @extend %navigation-flex;
-    gap: 24px;
 
+    gap: 24px;
   }
 
   &__logo {
     width: 125px;
 
-    @include for-tablet  {
+    @include for-tablet {
       width: 188px;
     }
   }
