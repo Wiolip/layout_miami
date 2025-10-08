@@ -1,4 +1,6 @@
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+@use '../utils/variables' as *;
 
 .phone{
   display: flex;
@@ -14,7 +16,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
-    color: #292929;
+    color: $base-color;
     text-align: right;
     text-transform: uppercase;
     letter-spacing: 2px;

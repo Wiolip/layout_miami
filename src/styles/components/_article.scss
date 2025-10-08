@@ -1,15 +1,14 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+
 
 .article {
   &__paragraph {
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    @extend %p;
     font-weight: 700;
-    font-style: Bold;
     line-height: 140%;
-    color: #292929;
-    letter-spacing: 0;
+    color: $text-color;
 
     @include for-tablet {
       font-size: 24px;

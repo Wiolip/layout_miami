@@ -1,3 +1,7 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+
 .address {
   font-weight: 400;
   line-height: 140%;
@@ -5,13 +9,17 @@
   &__label {
     margin-bottom: 8px;
     font-size: 14px;
-    color: #9fadc2;
+    color: $address-label;
   }
 
   &__content {
+    display: inline-block;
     margin-bottom: 24px;
     font-size: 14px;
-    color: #3e3e3e;
+    color: $address-content;
     text-decoration: none;
+    cursor: pointer;
+
+    @include hover(color, $address-link-hover);
   }
 }

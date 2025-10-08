@@ -1,4 +1,7 @@
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+@use '../utils/variables' as *;
+
 
 
 
@@ -17,7 +20,7 @@
   height: 100vh;
   padding: 0 20px;
 
-  background-color: #e8eff9;
+  background-color: $menu-bg;
 
   transition: transform 0.5s ease-in-out;
 
@@ -62,17 +65,16 @@
     padding-bottom: 8px;
     border-bottom: 1px solid transparent;
 
-    font-family: Inter, sans-serif;
+    @extend %link;
     font-size: 22px;
     font-weight: 700;
     line-height: 22px;
-    color: #292929;
-    text-decoration: none;
+    color: $base-color;
     text-transform: uppercase;
     letter-spacing: 2px;
 
     &:hover {
-      border-bottom: 1px solid #292929;
+      border-bottom: 1px solid $base-color;
     }
 
 
@@ -94,8 +96,7 @@
   &__paragraph {
     margin-bottom: 16px;
 
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    @extend %p;
     font-weight: 700;
     line-height: 27px;
     text-decoration: none;
@@ -109,13 +110,16 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
-    color: #292929;
+    color: $base-color;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
 
+     @include hover(color, $link-hover);
+
     &:hover{
-      border-bottom: 1px solid #292929;
+
+      border-bottom: 1px solid $base-color;
     }
   }
 }

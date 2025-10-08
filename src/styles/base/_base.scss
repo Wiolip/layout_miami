@@ -17,4 +17,7 @@ body:has(.menu:target) {
   height: 100vh;
 }
 
-@include headers-font;
+a{
+  text-decoration: none;
+}
+

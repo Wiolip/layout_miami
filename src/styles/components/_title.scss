@@ -1,12 +1,13 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+
 
 .title {
+  @extend %h1;
   font-size: 32px;
-  font-weight: 800;
-  font-style: Italic;
   line-height: 100%;
-  color: $header-color;
+  color: $heading-color;
   letter-spacing: -1.5px;
 
 
@@ -14,13 +15,12 @@
     content: url('../images/Sound\ waves.svg');
 
     display: block;
-
     width: 48px;
     height: 58px;
     margin-bottom: 16px;
 
    @include for-tablet  {
-      width: 6%;
+      width: 63px;
     }
   }
 
@@ -28,11 +28,9 @@
   &--secondary {
     margin-bottom: 48px;
 
+    @extend %h2;
     font-size: 32px;
-    font-weight: 700;
-    font-style: normal;
     line-height: 48px;
-    text-align: center;
 
     @include for-tablet {
       margin-bottom: 64px;

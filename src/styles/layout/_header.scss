@@ -1,5 +1,7 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+
 
 .header {
   grid-template-rows: 1fr 1fr;
@@ -41,5 +43,14 @@
     @include for-desktop {
       grid-column: 1/13;
     }
+  }
+
+
+  @include for-tablet {
+    padding: 0 72px 64;
+  }
+
+   @include for-desktop {
+    padding: 0 120px 64;
   }
 }

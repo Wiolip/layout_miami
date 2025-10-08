@@ -1,4 +1,6 @@
 @use '../utils/mixins' as *;
+@use '../utils/extends' as *;
+@use '../utils/variables' as *;
 
 .form {
   display: flex;
@@ -16,26 +18,24 @@
 
     line-height: 48px;
 
-    background-color: #f8f8fa;
+    background-color: $input-bg;
 
     &::placeholder {
-      font-family: Inter, sans-serif;
-      font-size: 14px;
-      font-weight: 400;
+      @extend %form;
       line-height: 20px;
     }
 
     &:hover{
-      border: 1px solid #D5D7DE;
+      border: 1px solid $form-border-color;
 
       &::placeholder{
-        color: #292929;
+        color: $base-color;
       }
     }
 
     &:focus, &:active{
-        border: 1px solid #292929;
-        color: #292929;
+        border: 1px solid $base-color;
+        color: $base-color;
     }
 
 
@@ -54,25 +54,24 @@
     border: 0;
     border-radius: 16px;
 
-    background-color: #f8f8fa;
+    background-color: $input-bg;
 
     &::placeholder {
-      font-family: Inter, sans-serif;
-      font-size: 14px;
-      font-weight: 400;
+       @extend %form;
+
     }
 
     &:hover{
-      border: 1px solid #D5D7DE;
+      border: 1px solid $form-border-color;
 
       &::placeholder{
-        color: #292929;
+        color: $base-color;
       }
     }
 
     &:focus, &:active{
-        border: 1px solid #292929;
-        color: #292929;
+        border: 1px solid $base-color;
+        color: $base-color;
     }
   }
 }

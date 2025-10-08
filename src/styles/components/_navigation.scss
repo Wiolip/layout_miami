@@ -1,16 +1,14 @@
 @use '../utils/mixins' as *;
-
+@use '../utils/extends' as *;
+@use '../utils/variables' as *;
 .navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %navigation-flex;
   padding: 24px 0;
 
   &__wrapper {
-    display: flex;
+    @extend %navigation-flex;
     gap: 24px;
-    align-items: center;
-    justify-content: space-between;
+
   }
 
   &__logo {

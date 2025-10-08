@@ -3,6 +3,7 @@
 
 @use './utils/variables';
 @use './utils/mixins';
+@use './utils/extends';
 
 @use './components/navigation';
 @use './components/menu';
